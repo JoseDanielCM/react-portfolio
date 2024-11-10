@@ -1,17 +1,15 @@
 // src/App.js
 import React from 'react';
-import Header from './components/Header';
 import Footer from './components/Footer';
 import MainContent from './components/MainContent';
-import FloatingNavDemo from './components/FloatingNavDemo'
+import FloatingNav from './components/FloatingNav'
 
 import './styles.css';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <FloatingNavDemo/>
+      <FloatingNav/>
       <MainContent />
       <Footer />
     </div>

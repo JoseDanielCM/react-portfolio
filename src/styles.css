@@ -31,3 +31,7 @@ body {
     margin-bottom: 2rem;
   }
   
+.nav-link.active {
+  color: rgb(190, 127, 226);  
+  font-weight: bold;
+}
