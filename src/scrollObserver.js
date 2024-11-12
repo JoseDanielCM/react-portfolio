@@ -2,6 +2,7 @@
 export const initScrollObserver = () => {
     // Selecciona todas las secciones y los enlaces de la navbar
     const sections = document.querySelectorAll('.main-section');
+    console.log(sections);
     
     // Crear un observer para detectar cuando una sección entra en el viewport
     const observer = new IntersectionObserver(

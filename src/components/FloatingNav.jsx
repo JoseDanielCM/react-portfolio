@@ -15,24 +15,24 @@ export function FloatingNavDemo() {
     },
     {
       name: "Mission",
-      link: "#Profile",
+      link: "#Mission",
       icon: (
         <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
     },
     {
       name: "Certifications",
-      link: "#Profile",
+      link: "#Certifications",
       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Services",
-      link: "#Profile",
+      link: "#Services",
       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Projects",
-      link: "#Profile ",
+      link: "#Projects",
       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
   ];
