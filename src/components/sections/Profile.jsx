@@ -21,9 +21,9 @@ function Profile() {
             {/* Dark overlay */}
 
             {/* Content */}
-            <div className="w-screen relative z-20 flex flex-col md:flex-row items-center justify-between text-white p-4 md:p-7">
+            <div className="w-screen relative z-20 flex flex-col md:flex-row items-center justify-between text-white right-24 p-0">
                 {/* Profile Photo */}
-                <div className="w-44 h-44 md:w-52 md:h-52 bg-gray-800 rounded-full overflow-hidden flex-shrink-0 mb-4 md:mb-0 sm:ml-40 md:ml-44 ">
+                <div className="w-44 h-44 md:w-60 md:h-60  bg-gray-800 rounded-full overflow-hidden flex-shrink-0 mb-4 md:mb-0 relative left-1/4">
                     <img src="/public/ProfilePhoto.png" alt="Profile Photo" className="w-full h-full object-cover" />
                 </div>
 

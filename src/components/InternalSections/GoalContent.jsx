@@ -1,5 +1,5 @@
 import React from "react";
-import { Cover } from "@/components/ui/cover";
+import { Cover } from "../ui/Cover";
 
 export function GoalContent() {
     return (
