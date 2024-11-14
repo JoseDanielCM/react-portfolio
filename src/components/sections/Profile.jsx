@@ -12,7 +12,8 @@ function Profile() {
                 loop
                 className="absolute inset-0 w-full h-full object-cover z-0"
                 style={{
-                    transform: 'translateX(-25%) scale(1.5)',  // Shifts the video left and scales it up
+                    transform: 'translateX(-25vw) scale(1.5)',
+                    objectFit: 'cover'
                 }}
             >
                 <source src="/ProfileBackground.mp4" type="video/mp4" />
@@ -23,7 +24,7 @@ function Profile() {
             {/* Content */}
             <div className="w-screen relative z-20 flex flex-col md:flex-row items-center justify-between text-white right-24 p-0">
                 {/* Profile Photo */}
-                <div className="w-44 h-44 md:w-60 md:h-60  bg-gray-800 rounded-full overflow-hidden flex-shrink-0 mb-4 md:mb-0 relative left-1/4">
+                <div className="w-44 h-44 md:w-1/6 md:h-1/6  bg-gray-800 rounded-full overflow-hidden flex-shrink-0 mb-4 md:mb-0 relative" style={{ marginLeft: '21.5%', marginBottom:"1%" }}>
                     <img src="/public/ProfilePhoto.png" alt="Profile Photo" className="w-full h-full object-cover" />
                 </div>
 
