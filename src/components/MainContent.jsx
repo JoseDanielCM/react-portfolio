@@ -5,7 +5,6 @@ import Goal from './sections/Goal';
 import Projects from './sections/Projects'
 import { initScrollObserver } from '../scrollObserver';
 
-
 function MainContent() {
     useEffect(() => {
         // Llamar la función para inicializar el observer

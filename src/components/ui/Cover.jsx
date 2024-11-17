@@ -92,8 +92,8 @@ export const Cover = ({
                 key={String(hovered)}
                 animate={{
                     scale: hovered ? 0.8 : 1,
-                    x: hovered ? [0, -10, 10, -10, 10, 0] : 0,
-                    y: hovered ? [0, 10, -10, 10, -10, 0] : 0,
+                    x: hovered ? [0, -3, 3, -3, 3, 0] : 0,
+                    y: hovered ? [0, 3, -3, 3, -3, 0] : 0,
                 }}
                 exit={{
                     filter: "none",
