@@ -14,10 +14,12 @@ export default function ProjectsTechnologies() {
 
     // List of projects with associated technologies
     const projects = [
-        { id: 1, name: 'Portfolio Website', image: '/path/to/portfolio-image.jpg', technologies: ['React', 'CSS'] },
-        { id: 2, name: 'To-Do App', image: '/path/to/todo-image.jpg', technologies: ['JavaScript', 'HTML'] },
-        { id: 3, name: 'API Backend', image: '/path/to/api-backend-image.jpg', technologies: ['MySQL', 'JavaScript'] },
-        { id: 4, name: 'Blog Page', image: '/path/to/blog-page-image.jpg', technologies: ['HTML', 'CSS'] },
+        { id: 1, name: 'Star Wars Data', image: '/path/to/portfolio-image.jpg', technologies: ['HTML', 'CSS','JavaScript', 'Bootstrap'] },
+        { id: 2, name: 'Library CRUD', image: '/path/to/todo-image.jpg', technologies: ['HTML', 'CSS','JavaScript', 'Bootstrap'] },
+        { id: 3, name: 'Drone E-commerce', image: '/path/to/api-backend-image.jpg', technologies: ['HTML', 'CSS','JavaScript'] },
+        { id: 4, name: 'Portfolio', image: '/path/to/blog-page-image.jpg', technologies: ['HTML', 'CSS','JavaScript', 'React','Tailwind'] },
+        { id: 5, name: 'Farm Database', image: '/path/to/blog-page-image.jpg', technologies: ['MySQL'] },
+
     ];
 
     const [selectedTechnology, setSelectedTechnology] = useState('');
@@ -39,7 +41,7 @@ export default function ProjectsTechnologies() {
             <h2>Technologies</h2>
 
             {/* TECHNOLOGIES BUTTONS */}
-            <div style={{ marginBottom: '20px' }}>
+            <div style={{ marginBottom: '20px' }} className='w-full flex justify-center flex-wrap'>
                 {technologies.map((tech) => (
                     <button
                         key={tech.name}
@@ -85,19 +87,13 @@ export default function ProjectsTechnologies() {
 
             {/* Render filtered projects */}
             <h2>Projects</h2>
-            <div
-                style={{
-                    display: 'flex',
-                    flexWrap: 'wrap',
-                    justifyContent: 'center',
-                    gap: '15px',
-                }}
-            >
+            <div className='flex flex-wrap justify-center gap-5'>
                 {filteredProjects.map((project) => (
                     <div
                         key={project.id}
                         style={{
                             backgroundColor: '#2A1A6E',  // Purple background
+                            backgroundImage : 'URL("https://media.tenor.com/ioFQgmwiwIoAAAAd/stars-universe.gif")',
                             color: 'white',
                             borderRadius: '10px',
                             width: '300px',
