@@ -1,13 +1,13 @@
 import React from "react";
 import { SparklesCore } from "../ui/sparkles";
 
-export function SparklesPreview() {
+export function SparklesPreview({title}) {
     return (
         (<div
             className="h-[18rem] w-full flex flex-col items-center justify-center overflow-hidden rounded-md ">
             <h1
                 className="md:text-7xl text-3xl lg:text-9xl  font-bold text-center text-white relative z-20">
-                Goals
+                {title}
             </h1>
             <div className="w-[40rem] h-40 relative z-20 ">
                 {/* Gradients */}

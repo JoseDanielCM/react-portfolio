@@ -5,8 +5,17 @@ export default function Projects() {
     return (
         <section
             id="Mission"
-            className="main-section relative h-screen sectBack-Top overflow-hidden"
+            className="main-section sectBack-Bot relative pb-28 pt-28 sectBack- overflow-hidden"
+            style={{
+                backgroundImage: 'URL("/public/TreeBackground.jpg")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+            }
+            }
         >
+
+
             <div className="space-cards-container flex flex-wrap justify-center gap-8 z-50 relative mt-10">
                 {/* Mission Card */}
                 <Card

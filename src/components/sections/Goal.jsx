@@ -19,7 +19,7 @@ function Goal() {
       </video>
 
       <img className='z-10 absolute top-0 left-0 ml-16 pl-3 mt-5 w-1/6' src="/public/SpacialCat1.webp" alt="" />
-      <SparklesPreview />
+      <SparklesPreview title="Goals"/>
       <GoalContent />
 
     </section>
