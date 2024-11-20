@@ -11,14 +11,13 @@ export default function ProjectsTechnologies() {
         { name: 'Tailwind', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' },
         { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg' },
     ];
-
     // List of projects with associated technologies
     const projects = [
-        { id: 1, name: 'Star Wars Data', image: '/path/to/portfolio-image.jpg', technologies: ['HTML', 'CSS','JavaScript', 'Bootstrap'] },
-        { id: 2, name: 'Library CRUD', image: '/path/to/todo-image.jpg', technologies: ['HTML', 'CSS','JavaScript', 'Bootstrap'] },
-        { id: 3, name: 'Drone E-commerce', image: '/path/to/api-backend-image.jpg', technologies: ['HTML', 'CSS','JavaScript'] },
-        { id: 4, name: 'Portfolio', image: '/path/to/blog-page-image.jpg', technologies: ['HTML', 'CSS','JavaScript', 'React','Tailwind'] },
-        { id: 5, name: 'Farm Database', image: '/path/to/blog-page-image.jpg', technologies: ['MySQL'] },
+        { id: 1, name: 'Star Wars Data', linkPagina: "https://josedanielcm.github.io/Proyecto_Javascript_CarvajalJose_CondeJuan/", image: '/public/StarWarsImage.png', technologies: ['HTML', 'CSS','JavaScript', 'Bootstrap'] },
+        { id: 2, name: 'Library CRUD', linkPagina: "https://josedanielcm.github.io/Proyecto_Javascript_CarvajalJose_CondeJuan/", image: '/path/to/todo-image.jpg', technologies: ['HTML', 'CSS','JavaScript', 'Bootstrap'] },
+        { id: 3, name: 'Drone E-commerce', linkPagina: "https://josedanielcm.github.io/Proyecto_Javascript_CarvajalJose_CondeJuan/", image: '/path/to/api-backend-image.jpg', technologies: ['HTML', 'CSS','JavaScript'] },
+        { id: 4, name: 'Portfolio',linkPagina: "https://josedanielcm.github.io/Proyecto_Javascript_CarvajalJose_CondeJuan/", image: '/path/to/blog-page-image.jpg', technologies: ['HTML', 'CSS','JavaScript', 'React','Tailwind'] },
+        { id: 5, name: 'Farm Database', linkPagina: "https://josedanielcm.github.io/Proyecto_Javascript_CarvajalJose_CondeJuan/", image: '/path/to/blog-page-image.jpg', technologies: ['MySQL'] },
 
     ];
 
@@ -38,7 +37,7 @@ export default function ProjectsTechnologies() {
 
     return (
         <div className='z-50 relative p-5'>
-            <h2>Technologies</h2>
+            <h2 className='text-white text-center text-7xl font-bold pt-20 pb-10'>Technologies</h2>
 
             {/* TECHNOLOGIES BUTTONS */}
             <div style={{ marginBottom: '20px' }} className='w-full flex justify-center flex-wrap'>
@@ -84,10 +83,9 @@ export default function ProjectsTechnologies() {
             </div>
 
             {/* -------------------------------------------------------------------------------------------- */}
-
             {/* Render filtered projects */}
-            <h2>Projects</h2>
-            <div className='flex flex-wrap justify-center gap-5'>
+            <h2 className=' text-center text-7xl font-bold pb-7'>Projects</h2>
+            <div className='flex flex-wrap justify-center gap-5 pb-20'>
                 {filteredProjects.map((project) => (
                     <div
                         key={project.id}
@@ -96,11 +94,14 @@ export default function ProjectsTechnologies() {
                             backgroundImage : 'URL("https://media.tenor.com/ioFQgmwiwIoAAAAd/stars-universe.gif")',
                             color: 'white',
                             borderRadius: '10px',
-                            width: '300px',
-                            padding: '20px',
+                            width: '500px',
+                            padding: '40px',
                             boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
                             transition: 'transform 0.3s ease',
+                            cursor: "pointer"
                         }}
+                        onClick={() => window.open(`${project.linkPagina}`, "_blank")}
+
                     >
                         <h3
                             style={{
@@ -117,7 +118,7 @@ export default function ProjectsTechnologies() {
                         <div
                             style={{
                                 width: '100%',
-                                height: '150px',
+                                height: '250px',
                                 backgroundColor: '#3E2A8A',
                                 borderRadius: '8px',
                                 marginBottom: '15px',

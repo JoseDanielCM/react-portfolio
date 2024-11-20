@@ -1,22 +1,26 @@
 import React from "react";
-import Card from "../InternalSections/MissionCard"; // Assuming Card is in the same folder
+import Card from "../InternalSections/MissionCard"; 
 
 export default function Projects() {
     return (
         <section
             id="Mission"
-            className="main-section sectBack-Bot relative pb-28 pt-28 sectBack- overflow-hidden"
+            className="main-section sectBack-Bot h-screen relative pb-28 pt-28 overflow-hidden"
             style={{
-                backgroundImage: 'URL("/public/TreeBackground.jpg")',
+                backgroundImage: `
+                    linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 20%),
+                    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 20%),
+                    url("/public/TreeBackground.jpg")
+                `,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
-            }
-            }
+                
+            }}
         >
 
-
-            <div className="space-cards-container flex flex-wrap justify-center gap-8 z-50 relative mt-10">
+            <h1 className="ext-center text-white text-7xl font-bold pb-7 pt-24 text-center">Mission Vission & Values</h1>
+            <div className="space-cards-container flex flex-wrap justify-center gap-28 z-50 relative mt-10">
                 {/* Mission Card */}
                 <Card
                     title="Mission"

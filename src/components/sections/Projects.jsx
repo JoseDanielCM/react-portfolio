@@ -5,9 +5,13 @@ export default function Projects() {
     return (
         <section id='Projects' className="main-section relative bg-black overflow-hidden" 
         style={{
-            backgroundImage: 'URL("/public/SunBackground.png")',
+            backgroundImage: `
+                linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 20%),
+                linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 20%),
+                URL("/public/SunBackground.png")
+            `,
             backgroundSize: 'cover',
-            backgroundPositionX:"center",
+            backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
         }
         }>
