@@ -3,7 +3,7 @@ import  ProjectsTechnologies  from '../InternalSections/ProjectsTechnologies'
 
 export default function Projects() {
     return (
-        <section id='Projects' className="main-section relative bg-black overflow-hidden" 
+        <section id='Projects' className="main-section relative" 
         style={{
             backgroundImage: `
                 linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 20%),
