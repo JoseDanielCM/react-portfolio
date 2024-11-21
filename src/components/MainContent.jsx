@@ -16,7 +16,7 @@ function MainContent() {
     }, []);
 
     return (
-        <main className='p-0'>
+        <main className='p-0 bg-black'>
             <Profile />
             <Goal />
             <Mission/>

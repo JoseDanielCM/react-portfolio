@@ -21,16 +21,6 @@ export function FloatingNavDemo() {
       ),
     },
     {
-      name: "Certifications",
-      link: "#Certifications",
-      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    },
-    {
-      name: "Services",
-      link: "#Services",
-      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    },
-    {
       name: "Projects",
       link: "#Projects",
       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,

@@ -5,7 +5,7 @@ export default function Projects() {
     return (
         <section
             id="Mission"
-            className="main-section relative "
+            className="main-section relative overflow-hidden min-h-[50vh] sectBack-Bot"
             style={{
                 backgroundImage: `
                     linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 20%),
@@ -20,7 +20,7 @@ export default function Projects() {
         >   
 
             <h1 className="text-white text-7xl font-bold pb-24 pt-24 text-center">Mission Vission & Values</h1>
-            <div className="space-cards-container flex flex-wrap justify-center gap-28 z-50 relative mt-10">
+            <div className="space-cards-container flex flex-wrap justify-center gap-28 z-50 relative mb-10 mt-10">
                 {/* Mission Card */}
                 <Card
                     title="Mission"
