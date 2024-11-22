@@ -4,21 +4,24 @@ export function ProfileCard() {
     return (
         (<CardSpotlight className="h-96 w-96">
             <p className="text-xl font-bold relative z-20 mt-2 text-white">
-                Authentication steps
+                About me
             </p>
             <div className="text-neutral-200 mt-4 relative z-20">
-                Follow these steps to secure your account:
-                <ul className="list-none  mt-2">
-                    <Step title="Enter your email address" />
-                    <Step title="Create a strong password" />
-                    <Step title="Set up two-factor authentication" />
-                    <Step title="Verify your identity" />
+                <span className="font-bold">
+                Hi, I'm Daniel. I'm a developer who loves learning and building new things. 
+                I'm always looking for ways to improve and take on new challenges. Welcome!
+                </span>
+                <p className="text-xl font-bold relative z-20 mt-2 text-white">
+                What I Enjoy
+                </p>
+                <ul className="text-neutral-200 mt-4 relative z-20">
+                    <li>💻 Building creative projects</li>
+                    <li>📚 Learning new technologies</li>
+                    <li>🧠 Solving complex problems</li>
+                    <li>🌟 Exploring new ideas</li>
                 </ul>
             </div>
-            <p className="text-neutral-300 mt-4 relative z-20 text-sm">
-                Ensuring your account is properly secured helps protect your personal
-                information and data.
-            </p>
+
         </CardSpotlight>)
     );
 }

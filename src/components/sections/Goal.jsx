@@ -17,8 +17,8 @@ function Goal() {
       >
         <source src="/public/GoalBackground.mp4" type="video/mp4" />
       </video>
-
-      <img className='z-10 absolute top-0 left-0 ml-16 pl-3 mt-5 w-1/6' src="/public/SpacialCat1.webp" alt="" />
+      
+      <img className='z-10 absolute top-0 left-0 ml-16 pl-3 mt-5 w-1/6' src="/public/img2.webp" alt="" />
       <SparklesPreview title="Goals"/>
       <GoalContent />
 
