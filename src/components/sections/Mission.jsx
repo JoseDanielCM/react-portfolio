@@ -24,7 +24,7 @@ export default function Projects() {
                 {/* Mission Card */}
                 <Card
                     title="Mission"
-                    description="Empowering users to learn effectively by creating innovative, space-inspired tools that combine technology and imagination."
+                    description="To create impactful software solutions that solve real-world problems while continuously improving my skills in programming and design."
                     iconSrc="https://img.icons8.com/color/96/rocket.png"
                     gradient="bg-gradient-to-br from-purple-900 to-black"
                 />
@@ -32,7 +32,7 @@ export default function Projects() {
                 {/* Vision Card */}
                 <Card
                     title="Vision"
-                    description="To revolutionize self-learning by inspiring individuals to explore the uncharted territories of knowledge, just like the stars."
+                    description="To become a developer who creates innovative solutions that inspire exploration, curiosity, and a deeper understanding of certain topics"
                     iconSrc="https://img.icons8.com/color/96/telescope.png"
                     gradient="bg-gradient-to-br from-blue-900 to-black"
                 />
@@ -47,9 +47,9 @@ export default function Projects() {
                         <ul className="mt-4 list-disc list-inside">
                             <li>Curiosity</li>
                             <li>Innovation</li>
-                            <li>Collaboration</li>
-                            <li>Integrity</li>
+                            <li>Continuous Improvement</li>
                             <li>Perseverance</li>
+                            <li>Adaptability</li>
                         </ul>
                     }
                 />
