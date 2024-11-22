@@ -1,31 +1,28 @@
 export const initScrollObserver = () => {
-    // Detectar el tamaño del viewport
-    const smallViewport = window.matchMedia('(max-width: 768px)'); // Viewports menores o iguales a 768px
 
-    // Configurar el threshold según el viewport
-    const options = smallViewport.matches
-        ? { threshold: 0.1 } // Viewport pequeño: activa cuando el 10% sea visible
-        : { threshold: 0.3 }; // Viewport grande: activa cuando el 50% sea visible
-
-    // Seleccionar secciones y enlaces de la navbar
     const sections = document.querySelectorAll('.main-section');
     console.log(sections);
-
-    // Crear el observer con las opciones dinámicas
+    
+    // Crear un observer para detectar cuando una sección entra en el viewport
     const observer = new IntersectionObserver(
         (entries) => {
             entries.forEach((entry) => {
                 const id = entry.target.getAttribute('id');
+                
                 const navLink = document.querySelector(`a[href="#${id}"]`);
 
                 if (entry.isIntersecting) {
+                    // Cuando la sección entra en el viewport, marcar el enlace como activo
                     navLink.classList.add('active');
                 } else {
+                    // Cuando la sección sale del viewport, quitar la clase activa
                     navLink.classList.remove('active');
                 }
             });
         },
-        options // Opciones según el tamaño del viewport
+        {
+            threshold: getDynamicThreshold() // Umbral dinámico
+        }
     );
 
     // Observar todas las secciones
@@ -36,3 +33,20 @@ export const initScrollObserver = () => {
         observer.disconnect();
     };
 };
+
+// Función para determinar el umbral dinámicamente
+function getDynamicThreshold() {
+    const viewportHeight = window.innerHeight;
+
+    // Obtener el tamaño de la sección más alta
+    const maxSectionHeight = Math.max(...Array.from(document.querySelectorAll('.main-section')).map(section => section.offsetHeight));
+
+    // Si la sección es más alta que el viewport, podemos reducir el umbral
+    if (maxSectionHeight > viewportHeight) {
+        // Si la sección es muy alta, utiliza un umbral más bajo (ej. 0.1 o 0.2)
+        return 0.2;
+    } else {
+        // Si la sección es pequeña o similar al viewport, usa el umbral de 0.5
+        return 0.5;
+    }
+}

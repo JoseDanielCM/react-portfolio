@@ -16,9 +16,9 @@ export default function ProjectsTechnologies() {
         { id: 1, name: 'Star Wars Data', linkPagina: "https://josedanielcm.github.io/Proyecto_Javascript_CarvajalJose_CondeJuan/", image: '/public/StarWarsImage.png', technologies: ['HTML', 'CSS','JavaScript', 'Bootstrap'] },
         { id: 2, name: 'Library CRUD', linkPagina: "https://josedanielcm.github.io/Proyecto_JavaScript_CarvajalJose/", image: '/public/Library.png', technologies: ['HTML', 'CSS','JavaScript', 'Bootstrap'] },
         { id: 3, name: 'Drone E-commerce', linkPagina: "https://josedanielcm.github.io/DRONE-HIVE/", image: '/public/DroneEcommerce.png', technologies: ['HTML', 'CSS','JavaScript'] },
-        { id: 4, name: 'Farm Database',linkPagina: "https://github.com/LuisEderLeon/Finca", image: '/public/ModelDataBase.png', technologies: ['HTML', 'CSS','JavaScript', 'React','Tailwind'] },
-        { id: 5, name: 'Portfolio', linkPagina: "https://josedanielcm.github.io/Proyecto_Javascript_CarvajalJose_CondeJuan/", image: '/path/to/blog-page-image.jpg', technologies: ['MySQL'] },
-
+        { id: 4, name: 'Farm Database',linkPagina: "https://github.com/LuisEderLeon/Finca", image: '/public/ModelDataBase.png', technologies: ['MySQL'] },
+        { id: 5, name: 'Portfolio', linkPagina: "https://josedanielcm.github.io/Proyecto_Javascript_CarvajalJose_CondeJuan/", image: '/path/to/blog-page-image.jpg', technologies: ['HTML', 'CSS','JavaScript', 'React','Tailwind'] },
+        
     ];
 
     const [selectedTechnology, setSelectedTechnology] = useState('');

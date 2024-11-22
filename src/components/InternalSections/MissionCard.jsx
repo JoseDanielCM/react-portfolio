@@ -3,7 +3,7 @@ import React from "react";
 const Card = ({ title, description, iconSrc, additionalContent, gradient }) => {
     return (
         <div
-            className={`space-card relative p-6 ${gradient} rounded-lg shadow-lg text-white hover:shadow-lg transition duration-300`}
+            className={`space-card relative p-6 ${gradient} rounded-2xl shadow-lg text-white hover:shadow-lg transition duration-300`}
         >
             <div className="flex justify-center">
                 <div className="icon-container inline-flex justify-center items-center">
